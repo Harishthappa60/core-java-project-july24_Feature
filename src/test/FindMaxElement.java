@@ -15,18 +15,19 @@ public class FindMaxElement {
         }
         System.out.println(max);
 
-        for (int j = 0; j < numbers.length - 1; j++) {
-            if (numbers[j] > max && max != 999) {
+        int j;
+        for ( j = 0; j < (numbers.length -2); j++) {
+            if (numbers[j] > max ) {
                 max = numbers[j];
 
             }
         }
-        System.out.println(max);
+        System.out.println(numbers[j]);
 
 
         double[] marks = {35.25, 25.36, 14.36, 45.65, 25.85, 15.95, 75.35, 95.15, 35.75, 85.25};
         double maxi = marks[0];
-        for (int j = 1; j < marks.length; j++) {
+        for ( j = 1; j < marks.length; j++) {
             if (marks[j] > maxi) {
                 maxi = marks[j];
             }

@@ -3,8 +3,8 @@ package array;
 public class DoubleArray {
     public static void main(String[] args) {
         double percentage[] = {35.25, 25.36, 14.36, 45.65, 25.85, 15.95, 75.35, 95.15, 35.75, 85.25};
-        for (int i = 0; i < percentage.length; i++) {
-            System.out.println("Printing Percentage using advanced for loop : " + percentage[i]);
+        for (double var : percentage) {
+            System.out.println("Printing Percentage using advanced for loop : " + var);
         }
         int j = 0;
         while (j < percentage.length) {

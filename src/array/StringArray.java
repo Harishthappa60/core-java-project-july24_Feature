@@ -3,9 +3,9 @@ package array;
 public class StringArray {
     public static void main(String[] args) {
         String country[] = {"India", "Pakistan", "China", "Russia", "Canada", "Australia", "Brazil", "Japan"};
-        for (int i = 0; i < country.length;) {
-            System.out.println("Printing Country using advanced for loop : " + country[i]);
-            i++;
+        for (String var: country) {
+            System.out.println("Printing Country using advanced for loop : " + var);
+
         }
         int j=0;
         while (j<country.length) {
